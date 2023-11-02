@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+   <!--
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+   -->
+   <link rel="stylesheet" href="./css/integradorJs.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid m-0 p-0">
+        <div class="container-fluid justify-content-center align-content-center">
+            <div class="d-flex flex-row justify-content-center p-2 gap-1">
+                <div class="d-flex flex-column border border-primary align-items-center ">
+                    <h5 class="CuadroTit">Estudiante</h5> 
+                    <h6 class="CuadroSubTit">Tienen un descuento</h6>   
+                    <h5><b>80%</b></h5>
+                    <h6 class="suave_ss">* presentar documentacion</h6>
+                </div>
+                <div class="d-flex flex-column border border-success align-items-center ">
+                    <h5 class="CuadroTit">Trainee</h5> 
+                    <h6 class="CuadroSubTit">Tienen un descuento</h6>   
+                    <h5><b>50%</b></h5>
+                    <h6 class="suave_ss">* presentar documentacion</h6>
+                </div>
+                <div class="d-flex flex-column border border-warning align-items-center ">
+                    <h5 class="CuadroTit">Trainee</h5> 
+                    <h6 class="CuadroSubTit">Tienen un descuento</h6>   
+                    <h5><b>15%</b></h5>
+                    <h6 class="suave_ss">* presentar documentacion</h6>
+                </div>
+            </div>
+
+            <div class="container-fluid ">
+                <div class="d-flex flex-row justify-content-center">
+                    <div class="flex-column">
+                        <h5 style="font-size: 80%;color:grey">VENTA</h5>
+                    </div>
+                </div>
+                <div class="d-flex flex-row justify-content-center">
+                    <div class="flex-column">
+                        <h1 style="font-weight:bold; font-size: 170%;">VALOR DE TICKET $200</h1>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div class="container-fluid col-sm-12 col-md-10 col-lg-7 row-gap-2 d-flex flex-wrap justify-content-center">
+            
+            <input class="formulario col-5 p-2 m-1" type="text" id="nombre" name="nombre" placeholder="Nombre"/>
+            <input class="formulario col-5 p-2 m-1" type="text" id="apellido" name="apellido" placeholder="Apellido" />
+            <input class="formulario col-10 p-2 m-1" type="text" id="correo" name="correo" placeholder="Correo"/>
+            <div class="col-5"><h6>Cantidad</h6></div>
+            <div class="col-5"><h6>Categoria</h6></div>
+            <input class="formulario col-5 p-2 m-1" type="text" id="cantidad" name="cantidad"  placeholder="cantidad"/>
+
+            <select class="formulario col-5 p-2 m-1" id="categoria" >
+                <option value="20" selected>Estudiante</option>
+                <option value="50" >Trainee</option>
+                <option value="85">Junior</option>
+            </select>
+            <div id="apagar" class="d-flex col-10">Total a Pagar: $ <p id="importe">0</p> </div>
+            <button type="button" class="d-flex m-1 btn col-auto mb-sm-3 col-5 justify-content-center align-content-center botonVde">Borrar</button>
+            <button id="btnRsm"  type="button" class="d-flex m-1 btn btn-success col-auto mb-sm-3 col-5 justify-content-center align-content-center botonVde">Resumen</button>
+            
+            
+            
+
+        </div>
+
+    </div>
+
+    
+
+
+<!--
+    <div class="container-fluid m-0 p-0">
+                
+        <div class="container-fluid justify-content-center align-content-center">
+            <div class="d-flex flex-row flex-sm-row justify-content-center gap-1">
+                <div class="d-flex flex-column gap-3 pt-3 pb-3 col-sm-12 col-md-2 col-lg-2 border border-2 border-primary justify-content-evenly align-items-center">
+                    <h5>Estudiante</h5>
+                    <h6 class="letra-mediana">Tienen un descuento</h6>
+                    <h6>80%</h6>
+                    <h6 class="aclaracion">* presentar documentación</h6>
+                </div>
+                
+                <div class="d-flex flex-column gap-3 pt-3 pb-3 col-sm-12 col-md-2 col-lg-2 border border-2 border-success justify-content-evenly align-items-center">
+                    <h5>Trainee</h5>
+                    <h6 class="letra-mediana">Tienen un descuento</h6>
+                    <h6>50%</h6>
+                    <h6 class="aclaracion">* presentar documentación</h6>
+                </div>
+                <div class="d-flex flex-column gap-3 pt-3 pb-3 ccol-sm-12 col-md-2 col-lg-2 border border-2 border-warning justify-content-evenly align-items-center">
+                    <h5>Junior</h5>
+                    <h6 class="letra-mediana">Tienen un descuento</h6>
+                    <h6>15%</h6>
+                    <h6 class="aclaracion">* presentar documentación</h6>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row-cols-auto">
+                    <h6 class="cols-auto d-flex justify-content-center mt-3" style="font-weight: 400; font-size: small;">VENTA</h6> 
+                    <h2 class="cols-auto d-flex justify-content-center" id="valor" value="200">VALOR DE TICKET $200</h2>
+                </div>
+            </div>
+            <div class="container-fluid col-sm-12 col-md-10 col-lg-7 row-gap-2 d-flex flex-wrap justify-content-center">
+                <input class="col-5 border border-opacity-75 rounded p-2 m-1" type="text" placeholder="Nombre">                
+                <input class="col-5 border border-opacity-75 rounded p-2 m-1" type="text" placeholder="Apellido">
+                <input class="col-10 border border-opacity-75 rounded p-2" type="email" placeholder="Correo">
+                <div class="col-5 letra-mediana p-2 m-1">Cantidad</div>
+                <div class="col-5 letra-mediana p-2 m-1">Categoría</div>
+                <input class="col-5 border border-opacity-75 rounded p-2 m-1" id="cantidad" type="text" placeholder="cantidad">
+                <select class="col-5 rounded m-1" name="categoria" id="categoria">
+                    <option selected="" value="20" id="op_estudiante">Estudiante</option>
+                    <option value="50" id="op_trainee">Trainee</option>
+                    <option value="85" id="op_junior">Junior</option>
+                </select>
+                <button type="button" class="d-flex m-1 btn btn-light col-auto p-2 mt-3 mb-sm-3 col-10 align-content-center celeste" id="valorTotal">Total a pagar $</button> 
+                <button type="button" class="d-flex m-1 btn btn-success col-auto mb-sm-3 col-5 justify-content-center align-content-center boton-verde blanco">Borrar</button>
+                <button type="button" class="d-flex m-1 btn btn-success col-auto mb-sm-3 col-5 justify-content-center align-content-center boton-verde blanco">Resumen</button>
+            </div>
+
+        </div>    
+        </div>
+        <footer class="d-inline-block flex-wrap align-content-around justify-content-center footer">
+        <ul class="nav-bar d-flex align-items-center justify-content-center flex-column flex-sm-row mt-sm-1 list-unstyled blanco">
+            <li class="nav-item mt-2 mx-sm-1 mx-md-1 mx-lg-2 mx-xl-3 mx-xxl-5">Preguntas<br>frecuentes</li>
+            <li class="nav-item mt-2 mx-sm-1 mx-md-1 mx-lg-2 mx-xl-3 mx-xxl-5">Contáctanos</li>
+            <li class="nav-item mt-2 mx-sm-1 mx-md-1 mx-lg-2 mx-xl-3 mx-xxl-5">Prensa</li>
+            <li class="nav-item mt-2 mx-sm-1 mx-md-1 mx-lg-2 mx-xl-3 mx-xxl-5">Conferencias</li>
+            <li class="nav-item mt-2 mx-sm-1 mx-md-1 mx-lg-2 mx-xl-3 mx-xxl-5">Terminos y<br>condiciones</li>
+            <li class="nav-item mt-2 mx-sm-1 mx-md-1 mx-lg-2 mx-xl-3 mx-xxl-5">Privacidad</li>
+            <li class="nav-item mt-2 mx-sm-1 mx-md-1 mx-lg-2 mx-xl-3 mx-xxl-5">Estudiantes</li>
+        </ul>
+        </footer>
+    </div>
+
+    <div>
+    -->
+           
+<!--            <label>cantidad<input type="text" id="cantidad" name="cantidad" /></label> <br>
+            
+            <div id="apagar" class="display=flex">total a pagar: $ <p id="importe">0</p></div> <br>
+        
+        
+            <select id="categoria">
+                <option value="20" selected>Estudiante</option>
+                <option value="50" >Trainee</option>
+                <option value="85">Junior</option>
+              </select>
+            <button id="btnRsm">Resumen</button>
+            
+       
+        
+    </div>
+    -->
+    <script src="JS/integradorJS.js">
+
+    </script>
+
+</body>
+</html>
