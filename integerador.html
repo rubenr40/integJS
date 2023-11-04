@@ -11,8 +11,54 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container-fluid m-0 p-0">
-        <div class="container-fluid justify-content-center align-content-center">
+
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <!-- apretando el logo de Codo a Codo, manda a la url del tp integrador 
+            
+            <a class="navbar-brand" href="https://aulasvirtuales.bue.edu.ar/course/view.php?id=14975&section=13"  target="_blank">
+                <img src="./integradorimg/codoacodo.png" alt="logo codo a codo" class="img-fluid logo m-0 ms-5 p-0">
+            </a>
+            -->
+            <h2 class="fw-bold text-light">Conf Bs As</h2>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active  me-3 "  href="../index.html">La Conferencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-3 " href="#oradores">Los Oradores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  me-3 " href="#info">Lugar Y Fecha</a>
+                    </li>  
+                    <li class="nav-item">
+                        <a class="nav-link  me-3" href="#serOrador">Convertite en Orador</a>
+                    </li>  
+                    
+                    <li class="nav-item text-success ">
+                        <button onclick= "window.location.href='./integerador.html'" type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            comprar ticket
+                        </button>
+                        <!-- <a class="nav-link text-success  me-3" aria-current="page" href="html/comprarTicket.html">Comprar tickets</a> -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+        <div class="container-fluid justify-content-center align-content-center mt-5">
+            <div class="d-flex flex-row justify-content-center p-2 gap-1">
+                <div class="d-flex flex-column border border-primary align-items-center ">
+                         
+                </div>
+            </div>
+
             <div class="d-flex flex-row justify-content-center p-2 gap-1">
                 <div class="d-flex flex-column border border-primary align-items-center ">
                     <h5 class="CuadroTit">Estudiante</h5> 
@@ -52,7 +98,6 @@
 
 
         <div class="container-fluid col-sm-12 col-md-10 col-lg-7 row-gap-2 d-flex flex-wrap justify-content-center">
-            
             <input class="formulario col-5 p-2 m-1" type="text" id="nombre" name="nombre" placeholder="Nombre"/>
             <input class="formulario col-5 p-2 m-1" type="text" id="apellido" name="apellido" placeholder="Apellido" />
             <input class="formulario col-10 p-2 m-1" type="text" id="correo" name="correo" placeholder="Correo"/>
@@ -76,7 +121,20 @@
 
     </div>
 
-    
+    <div class="container-fluid">
+        <div class="row">
+            <footer class="sm-6 p-5 mt-4">
+                <a class="m-5 text-light" href="#">Preguntas Frecuentes</a>
+                <a class="m-5 text-light" href="#">Contáctos</a>
+                <a class="m-5 text-light" href="#">Prensa</a>
+                <a class="m-5 text-light" href="#">Conferencias</a>
+                <a class="m-5 text-light" href="#">Terminos y Condiciones</a>
+                <a class="m-5 text-light" href="#">Privacidad</a>
+                <a class="m-5 text-light" href="#">Estudiantes</a>
+            </footer>
+        </div>
+    </div>
+
 
 
 <!--

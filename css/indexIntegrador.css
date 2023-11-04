@@ -1,0 +1,37 @@
+.logo{
+    width: 160px;
+    height: 80px;
+}
+
+
+.carouselItem{
+    height: 680px;
+    /* para que se achique  */
+    flex-wrap: wrap; 
+    justify-content: space-around;
+}
+
+.filtro{
+    /* background-color: rgb(40, 38, 38); */
+    /* opacity: 0.56; */
+    filter: brightness(.6) 
+             contrast(1.6);
+}
+
+.textCarousel {
+    /* posición */
+    position: absolute;
+    top: 8px;
+    right: 16px;
+
+  }
+
+.imgHawaii{
+    width: 100%;
+    height:fit-content;
+}
+
+footer{
+    justify-content: space-between;
+    background-color: #153265;
+}
